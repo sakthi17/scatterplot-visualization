@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css?family=Lato|Montserrat:300|Raleway");
+body {
+  background: url("https://cdn-cyclingtips.pressidium.com/wp-content/uploads/2011/07/alpe-dhuez-16.jpg") no-repeat;
+  background-size: cover;
+}
+
+.chart {
+  text-align: center;
+  position: relative;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+
+h1, h2, h4 {
+  margin: 10px;
+}
+
+svg {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.axis path,
+.axis line {
+  stroke: white;
+  stroke-width: 2px;
+  opacity: 0.6;
+}
+
+.axis text {
+  fill: white;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+}
+
+text.xLabel,
+text.yLabel {
+  fill: white;
+  stroke-width: 1px;
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+}
+
+g.datapoint {
+  cursor: pointer;
+}
+
+.dots {
+  stroke: black;
+  stroke-width: 1px;
+}
+
+.dots.no-drug {
+  fill: green;
+}
+
+.dots.on-drug {
+  fill: red;
+}
+
+g.highlight circle {
+  stroke-width: 2px;
+  stroke: white;
+}
+
+text.point-name {
+  font-size: 16px;
+  text-anchor: start;
+  fill: rgba(255, 255, 255, 0.7);
+  font-family: "Montserrat", sans-serif;
+}
+
+g.highlight text {
+  fill: orange;
+}
+
+.tooltip {
+  line-height: 1.5;
+  padding: 10px 7px 15px 7px;
+  background: black;
+  color: orange;
+  font-family: "Lato", sans-serif;
+  height: auto;
+  max-width: 270px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  /*
+   &:after{
+     content: "";
+     display: block;
+     height: 20px;
+     width:3px;
+     background-color: rgba(0,0,0,0.9);
+     position: absolute;   
+   }
+  */
+}
+
+/*
+.tooltip.north:after{
+    bottom: -20px; left: 50%; transform: translate(-50%,0);
+}
+.tooltip.south:after{
+     height: 27px;
+     top: -27px; left: 50%; transform: translate(-50%,0); 
+}
+*/
+.name {
+  font-size: 16px;
+  font-weight: bold;
+  color: orange;
+  padding: 8px;
+}
+
+.record {
+  font-size: 14px;
+  color: white;
+  padding: 7px;
+}
+
+.case {
+  font-size: 16px;
+  color: white;
+  margin: 0px;
+  padding: 5px 0px 0px 0px;
+  text-align: center;
+}
+
+.legendBox text {
+  fill: white;
+  font-family: "Raleway", sans-serif;
+}
